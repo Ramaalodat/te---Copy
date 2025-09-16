@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Techbuddy Setup</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg">
+  <header class="topbar">
+    <div class="logo">
+      <img src="ro.png" alt="Techbuddy logo">
+      <span>Techbuddy</span>
+    </div>
+    <nav class="auth-links">
+      <a href="index.html" class="muted">Home</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="card">
+      <h2>Configure your chatbot</h2>
+      <form id="setup-form" class="form-grid">
+        <div class="full">
+          <label for="name">Chatbot Name</label>
+          <input id="name" name="name" type="text" value="TechBuddy" required>
+        </div>
+        <div class="full">
+          <label for="instructions">Chatbot Instructions</label>
+          <textarea id="instructions" name="instructions">Provide instant technical support for my store</textarea>
+        </div>
+        <div>
+          <label for="collection">Choose the way to collect your website data</label>
+          <select id="collection" name="collection">
+            <option value="CSV" selected>CSV</option>
+            <option value="Scraping">Scraping</option>
+          </select>
+        </div>
+        <div>
+          <label for="shop">E-commerce Shop Data</label>
+          <input id="shop" name="shop" type="text" value="https://example-shop.com">
+        </div>
+        <div>
+          <label for="language">Chatbot Language</label>
+          <input id="language" name="language" type="text" value="English">
+        </div>
+        <div>
+          <label for="products">Number of Products in Store</label>
+          <input id="products" name="products" type="number" value="100" min="0">
+        </div>
+
+        <div class="row full">
+          <a class="btn-secondary" href="index.html">Back</a>
+          <div class="button-group">
+            <a class="btn-secondary" href="instructions.html">Instructions</a>
+            <button class="cta" type="submit">Continue</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
+

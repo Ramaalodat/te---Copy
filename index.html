@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Techbuddy - AI Technical Support</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg">
+  <header class="topbar">
+    <div class="logo">
+      <img src="ro.png" alt="Techbuddy logo">
+      <span>Techbuddy</span>
+    </div>
+    <nav class="auth-links">
+      <a href="#" class="muted">Login</a>
+      <a href="#" class="muted">Register</a>
+    </nav>
+  </header>
+
+  <main class="hero">
+    <section class="hero-text">
+      <h1>
+        <span class="ai">AI</span>
+        <span> Technical Support for </span>
+        <span class="accent">E-Commerce</span>
+      </h1>
+      <p class="subtitle">Your reliable partner for swift, intelligent e‑commerce solutions. Resolve technical issues, optimize performance, and enhance customer experience with our advanced AI.</p>
+      <button id="get-started" class="cta">Get Started</button>
+    </section>
+    <section class="hero-art">
+      <img src="robot2.png" alt="Robot assistant" class="robot">
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+  <script>
+    document.getElementById('get-started').addEventListener('click', function(){
+      window.location.href = 'form.html';
+    });
+  </script>
+</body>
+</html>
+
+

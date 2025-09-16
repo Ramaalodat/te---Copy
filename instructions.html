@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Techbuddy - Installation Instructions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg">
+  <header class="topbar">
+    <div class="logo">
+      <img src="ro.png" alt="Techbuddy logo">
+      <span>Techbuddy</span>
+    </div>
+    <nav class="auth-links">
+      <a href="index.html" class="muted">Home</a>
+      <a href="form.html" class="muted">Setup</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="card">
+      <h2>Installation Instructions</h2>
+      
+      <div class="instructions-section">
+        <h3>Here is your link</h3>
+        <div class="code-block">
+          <code id="embed-code">&lt;script src="https://techbuddy.ai/embed.js" data-chatbot-id="your-id-here"&gt;&lt;/script&gt;</code>
+          <button class="copy-btn" onclick="copyCode()">Copy</button>
+        </div>
+        
+        <div class="steps">
+          <div class="step">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <h4>Copy this snippet and paste it into your website's HTML</h4>
+              <p>Copy the script tag above and add it to your website's HTML file where you want the chatbot to appear.</p>
+            </div>
+          </div>
+          
+          <div class="step">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <h4>Make sure the script is placed before the closing &lt;/body&gt; tag</h4>
+              <p>For optimal performance, place the script just before the closing &lt;/body&gt; tag in your HTML document.</p>
+            </div>
+          </div>
+          
+          <div class="step">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <h4>Refresh your site to see it live</h4>
+              <p>Once you've added the script and saved your changes, refresh your website to see your TechBuddy chatbot in action!</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="support-note">
+          <h4>Need help?</h4>
+          <p>If you encounter any issues during installation, please contact our support team at <a href="mailto:support@techbuddy.ai">support@techbuddy.ai</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function copyCode() {
+      const code = document.getElementById('embed-code').textContent;
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.querySelector('.copy-btn');
+        const originalText = btn.textContent;
+        btn.textContent = 'Copied!';
+        btn.style.background = 'linear-gradient(135deg, #10b981, #059669)';
+        setTimeout(() => {
+          btn.textContent = originalText;
+          btn.style.background = '';
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

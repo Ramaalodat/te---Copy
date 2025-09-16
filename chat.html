@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Techbuddy Chat</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg">
+  <header class="topbar">
+    <div class="logo">
+      <img src="ro.png" alt="Techbuddy logo">
+      <span id="chat-title">Techbuddy</span>
+    </div>
+    <nav class="auth-links">
+      <a href="form.html" class="muted">Edit Setup</a>
+    </nav>
+  </header>
+
+  <div class="container chat-wrapper">
+    <div class="card">
+      <h2>Try your chatbot</h2>
+      <div id="chat-box" class="chat-box"></div>
+      <div class="input-row">
+        <input id="chat-input" type="text" placeholder="Type a message and press Enter...">
+        <button id="send-btn" class="cta">Send</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
+
