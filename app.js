@@ -22,7 +22,7 @@
     form.addEventListener('submit', function(e){
       e.preventDefault();
       const data = {
-        name: document.getElementById('name').value.trim() || 'TechBuddy',
+        name: document.getElementById('name').value.trim() || 'Techbuddy',
         instructions: document.getElementById('instructions').value.trim() || 'Provide instant technical support for my store',
         collection: document.getElementById('collection').value,
         shop: document.getElementById('shop').value.trim() || 'https://example-shop.com',
@@ -50,13 +50,13 @@
       const bubble = document.createElement('div');
       bubble.className = 'bubble';
       bubble.textContent = text;
-      row.appendChild(bubble);
+      row.appendChild(bubbl e);
       chatBox.appendChild(row);
       chatBox.scrollTop = chatBox.scrollHeight;
     }
 
     // Intro message
-    addMessage('bot', `${conf.name || 'TechBuddy'} ready to help with ${conf.shop || 'your store'} (${conf.language || 'English'}). Ask me anything!`);
+    addMessage('bot', `${conf.name || 'Techbuddy'} ready to help with ${conf.shop || 'your store'} (${conf.language || 'English'}). Ask me anything!`);
 
     function botReply(userText){
       const canned = [
